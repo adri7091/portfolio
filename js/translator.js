@@ -57,7 +57,7 @@ function setLanguageByLang(lang) {
         ]   
     };
 
-    for(i in dictionary.translations)
+    for(var i in dictionary.translations)
     {
         if (lang === "enUS")
         {
