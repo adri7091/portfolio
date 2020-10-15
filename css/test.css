@@ -1,0 +1,261 @@
+.inittxt {
+    padding: 5px;
+    font-size: 18px;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+  .yukAn {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .yukAn * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .yukAn li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1em;
+    padding: 0;
+  }
+  .yukAn a {
+    padding: 0.5em 0.8em;
+    margin: 0.2em 0;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+  }
+  .yukAn a:before,
+  .yukAn a:after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+  }
+  .yukAn a:before {
+    left: 0;
+    top: 0;
+    border-left: 3px solid rgba(255,255,255,.5);
+    border-top: 3px solid rgba(255,255,255,.5);
+    -webkit-transform: translate(100%, 50%);
+    transform: translate(100%, 50%);
+  }
+  .yukAn a:after {
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid rgba(255,255,255,.5);
+    border-bottom: 3px solid rgba(255,255,255,.5);
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+  }
+  .yukAn a:hover,
+  .yukAn .current a {
+    color: #ffffff;
+  }
+  .yukAn a:hover:before,
+  .yukAn .current a:before,
+  .yukAn a:hover:after,
+  .yukAn .current a:after {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  
+  *{
+      box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+  margin:0;
+  padding: 0;
+  font-size:1rem;
+  font-weight:normal;
+  line-height:1.5;
+  overflow-x:hidden;
+  }
+  
+  .v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  color:rgba(255, 255, 255, 0.774);
+  }
+  
+  .container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+  }
+  
+  .parallax-video-wrap{
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      min-height: 500px;
+  
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  }
+  .fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+  }
+  
+  .header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#2e2e2e;
+  opacity:0.85;
+  }
+  
+  .header-content{
+  z-index:2;
+  }
+  
+  .header-content h1{
+  font-size:50px;
+  margin-bottom:0;
+  }
+  
+  .header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+  }
+  
+  .btn{
+  background: #141d53;
+  color:#fff;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  }
+  
+  .section{
+  padding:20px 0;
+  }
+    
+  .section-b{
+    background:#333;
+    color:#fff;
+   }
+    
+  @media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+    }
+  }
+  
+  footer{
+    min-width:100%;
+    width:100%;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 15px;
+  }
+  .profile-about{
+    padding: 5px;
+    background-color: #444;
+    border-radius: 6%
+  }
+  .profile{
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+  }
+  .parrafo{
+    margin-top: 15px;
+    text-align: justify;
+  }
+  .container-p{
+    padding: 5%;
+    background-color:#222;
+    border-radius: 1%;
+    z-index:2;
+  }
+  .black{
+    background-color: #000;
+  }
+  
+  .fullScreenPhoto{
+    width: 100%;
+    margin:0;
+    height:300px;
+    background-color: red;
+  }
+  
+  .fullScreenPhoto2{
+    width: 100%;
+    height:300px;
+      margin:0;
+    background-color: green;
+  }
+  .fullScreenPhoto3{
+    width: 100%;
+      margin:0;
+    height:300px;
+    background-color: yellow;
+  }
+  
+  video {
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+  }
+
+  .ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
