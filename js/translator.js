@@ -21,67 +21,69 @@ $(document).ready(function () {
 
 function setLanguageByLang(lang) {
 
-    var dictionary = {
-        "translations": [
-            {
-                "class": "trl-web-title",
-                "enUS": "My portfolio - Adri\u00E1n Quir\u00F3s Pascual",
-                "esES": "Mi portafolio - Adri\u00E1n Quir\u00F3s Pascual"
-            },
-            {
-                "class": "trl-home",
-                "enUS": "Home",
-                "esES": "Inicio"
-            },
-            {
-                "class": "trl-who",
-                "enUS": "Who I am?",
-                "esES": "\u00bfQui\u00e9n soy?"
-            },
-            {
-                "class": "trl-projects",
-                "enUS": "Projects",
-                "esES": "Proyectos"
-            },
-            {
-                "class": "trl-contact",
-                "enUS": "Contact",
-                "esES": "Contacto"
-            },
-            {
-                "class": "tr-english",
-                "enUS": "Enlgish",
-                "esES": "Ingl\u00E9s"
-            },
-            {
-                "class": "tr-spanish",
-                "enUS": "Spanish",
-                "esES": "Espa\u00F1ol"
-            },
-            {
-                "class": "trl-heading",
-                "enUS": "My portfolio",
-                "esES": "Mi portafolio"
-            },
-            {
-                "class": "trl-language",
-                "enUS": "Language",
-                "esES": "Idioma"
-            },
-            {
-                "class": "trl-scrolldown",
-                "enUS": "Scroll down",
-                "esES": "Deslizar hacia abajo"
-            }
-        ]
-    };
+    var dictionary = '{'
+        + '"translations": ['
+        +   '{'
+        +       '"class": "trl-web-title",'
+        +       '"enUS": "My portfolio - Adri\u00E1n Quir\u00F3s Pascual",'
+        +       '"esES": "Mi portafolio - Adri\u00E1n Quir\u00F3s Pascual"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-home",'
+        +       '"enUS": "Home",'
+        +       '"esES": "Inicio"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-who",'
+        +       '"enUS": "Who I am?",'
+        +       '"esES": "\u00bfQui\u00e9n soy?"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-projects",'
+        +       '"enUS": "Projects",'
+        +       '"esES": "Proyectos"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-contact",'
+        +       '"enUS": "Contact",'
+        +       '"esES": "Contacto"'
+        +   '},'
+        +   '{'
+        +       '"class": "tr-english",'
+        +       '"enUS": "Enlgish",'
+        +       '"esES": "Ingl\u00E9s"'
+        +   '},'
+        +   '{'
+        +       '"class": "tr-spanish",'
+        +       '"enUS": "Spanish",'
+        +       '"esES": "Espa\u00F1ol"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-heading",'
+        +       '"enUS": "My portfolio",'
+        +       '"esES": "Mi portafolio"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-language",'
+        +       '"enUS": "Language",'
+        +       '"esES": "Idioma"'
+        +   '},'
+        +   '{'
+        +       '"class": "trl-scrolldown",'
+        +       '"enUS": "Scroll down",'
+        +       '"esES": "Deslizar hacia abajo"'
+        +   '}'
+        +']'
+    +'}';
 
-    for (var i in dictionary.translations) {
+    var data = JSON.parse(dictionary);
+
+    for (var i in data.translations) {
         if (lang === "enUS") {
-            $('.' + dictionary.translations[i].class).text(dictionary.translations[i].enUS);
+            $('.' + data.translations[i].class).text(data.translations[i].enUS);
         }
         else {
-            $('.' + dictionary.translations[i].class).text(dictionary.translations[i].esES);
+            $('.' + data.translations[i].class).text(data.translations[i].esES);
         }
     }
 }
