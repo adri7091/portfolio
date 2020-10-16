@@ -10,6 +10,7 @@ $(document).ready(function () {
   $('.collapse-check>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
+
 });
 
 function updateNavStyle() {
@@ -18,10 +19,14 @@ function updateNavStyle() {
     $('.navbar').addClass('navbar-top-bg');
     $('.dropdown-menu').removeClass('dropdown-transparent');
     $('.dropdown-menu').addClass('dropdown-bg');
+    $('#scroll-down').addClass('hide');
+    $('.arrow-down').addClass('hide');
   } else {
     $('.navbar').removeClass('navbar-top-bg');
     $('.navbar').addClass('navbar-top-transparent');
     $('.dropdown-menu').removeClass('dropdown-bg');
     $('.dropdown-menu').addClass('dropdown-transparent');
+    $('#scroll-down').removeClass('hide');
+    $('.arrow-down').removeClass('hide');
   }
 }

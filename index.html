@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es-ES">
+
 <head>
   <!--Meta-->
   <meta charset="utf-8">
@@ -20,17 +21,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <!-- Links & Resources -->
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <script src="../js/translator.js"></script>
-  <script src="../js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/translator.js"></script>
+  <script src="js/script.js"></script>
 
 </head>
 
-<body id="top" data-spy="scroll" data-target=".navbar">
+<body id="top">
   <header class="main">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand heading-style" href="#top"><img class="navbar-logo" alt="logo" src="" />Adri&aacute;n Quir&oacute;s
-        Pascual</a>
+      <a class="navbar-brand heading-style" href="#top"><img class="navbar-logo" alt="logo" src="" />Adri&aacute;n
+        Quir&oacute;s Pascual</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,8 +51,9 @@
             <a class="nav-link trl-contact" href="#contact">Contact</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="tr-language" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <div class="dropdown-toggle">Language </div>
+            <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="dropdown-toggle trl-language">Language </div>
             </a>
             <div class="collapse-check dropdown-menu" aria-labelledby="navbarDropdown">
               <a id="english" class="tr-english dropdown-style" href="#">English</a>
@@ -65,10 +67,15 @@
 
   <article>
     <div id="video" class="parallax-video bg-overlay">
-      <div class="heading text-center col-12">
-        <h3>My portfolio</h3>
+      <div class="text-center col-12">
+        <div class="col-12 arrow-container">
+          <div id="scroll-down">
+            <span class="arrow-down"></span>
+            <span id="scroll-title" class="trl-scrolldown">Scroll down</span>
+          </div>
+        </div>
       </div>
-      <video src="../src/videos/bkd.mp4" autoplay muted loop type="video/mp4"></video>
+      <video src="src/videos/bkd2.mp4" autoplay muted loop type="video/mp4"></video>
     </div>
     <div id="who" class="container-fluid parallax-container bg-color col-lg-12">
       <h2 class="title trl-who">Who I am?</h2>

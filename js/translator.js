@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     var language = sessionStorage.getItem('language');
 
     $('#english').on('click', function () {
@@ -12,8 +12,7 @@ $(document).ready(function () {
         window.location.reload();
     });
 
-    if(language != undefined)
-    {
+    if (language != undefined) {
         setLanguageByLang(language)
     }
 
@@ -23,7 +22,7 @@ $(document).ready(function () {
 function setLanguageByLang(lang) {
 
     var dictionary = {
-        "translations":[
+        "translations": [
             {
                 "class": "trl-web-title",
                 "enUS": "My portfolio - Adri\u00E1n Quir\u00F3s Pascual",
@@ -52,19 +51,36 @@ function setLanguageByLang(lang) {
             {
                 "class": "tr-english",
                 "enUS": "Enlgish",
-                "esES": "ingl"
+                "esES": "Ingl\u00E9s"
+            },
+            {
+                "class": "tr-spanish",
+                "enUS": "Spanish",
+                "esES": "Espa\u00F1ol"
+            },
+            {
+                "class": "trl-heading",
+                "enUS": "My portfolio",
+                "esES": "Mi portafolio"
+            },
+            {
+                "class": "trl-language",
+                "enUS": "Language",
+                "esES": "Idioma"
+            },
+            {
+                "class": "trl-scrolldown",
+                "enUS": "Scroll down",
+                "esES": "Deslizar hacia abajo"
             }
-        ]   
+        ]
     };
 
-    for(var i in dictionary.translations)
-    {
-        if (lang === "enUS")
-        {
+    for (var i in dictionary.translations) {
+        if (lang === "enUS") {
             $('.' + dictionary.translations[i].class).text(dictionary.translations[i].enUS);
-        } 
-        else
-        {
+        }
+        else {
             $('.' + dictionary.translations[i].class).text(dictionary.translations[i].esES);
         }
     }
